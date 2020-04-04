@@ -1,0 +1,43 @@
+{
+  "urls" : {
+    "/" : "http://m.myolx.ph",
+    "login" : "/login",
+    "myaccount" : "/myaccount",
+    "register" : "/register",
+    "all-results" : "/all-results"
+  },
+  "selenium" : {
+    "hub_url" : "http://athena-selenium-hub:4444/wd/hub",
+    "selenium.request_timeout" : 45
+  },
+  "proxy" : {
+    "connectTimeout": 30000,
+    "readTimeout": 30000,
+    "connection_timeout": 60000,
+    "request_timeout": 60000,
+    "url": "http://athena-proxy",
+    "port": 9090,
+    "internalPort": 9991,
+    "proxyType": "manual",
+    "httpProxy": "athena-proxy:9991",
+    "sslProxy": "athena-proxy:9991",
+    "remapHosts": {
+      "m.myolx.ph": "192.168.99.101"
+    }
+  },
+  "report" : {
+    "format" : "html",
+    "outputDirectory" : "./Reports/bdd"
+  },
+  "backlist_urls" : {
+    ".*facebook.com" : 200,
+    ".*gemius\\..*" : 200,
+    ".*plus\\..*" : 200,
+    ".*optimizely\\..*" : 200,
+    ".*doubleclick.net" : 200
+  },
+  "email": "jbpallingayan+bentest1@olx.ph",
+  "password": "1234qwer",
+  "verified-phone": "639000000001",
+  "name": "QA Auto"
+}

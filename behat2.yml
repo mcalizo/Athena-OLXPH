@@ -1,0 +1,29 @@
+# behat.yml
+default:
+    extensions:
+        emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+              name: html
+              renderer: Twig
+              file_name: index
+              print_args: true
+              print_outp: true
+              loop_break: true
+        Tonic\Behat\ParallelScenarioExtension: ~
+        Athena\Behat\BootstrapFileLoader:
+            bootstrap_path: "/opt/athena/bootstrap.php"
+        Athena\Event\Proxy\BehatProxyExtension: ~
+    formatters:
+        html:
+          output_path: %paths.base%/build/html/behat
+    suites:
+        default:
+            filters:
+             tags: ~@skip-registration
+            paths:
+                - %paths.base%/Bdd/feature
+            contexts:
+                - Tests\Bdd\context\HomePageContext
+                - Tests\Bdd\context\AdListingContext
+                - Tests\Bdd\context\AdDetailsContext
+                - Tests\Bdd\context\LoginContext
+                - Tests\Bdd\context\RegistrationContext

@@ -1,0 +1,9 @@
+/Reports
+/build
+/vendor
+.idea/
+athena.bdd.json
+athena.bdd.staging.json
+athena.browser.json
+athena.sampleApi.json
+athena.api.json

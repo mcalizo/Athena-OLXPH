@@ -1,0 +1,52 @@
+{
+  "urls" : {
+    "/" : "https://www.olx.ph",
+    "login" : "/login",
+    "myaccount" : "/myaccount",
+    "register" : "/register",
+    "manage" : "/ad/manage",
+    "messages" : "/messages",
+    "all-results" : "/all-results",
+    "payments" : "/payments",
+    "buynow" : "/all-results?buynow=1"
+  },
+  "selenium" : {
+    "hub_url" : "http://athena-selenium-hub:4444/wd/hub",
+    "implicit_timeout" : 60,
+    "request_timeout" : 600,
+    "readTimeout": 9000,
+    "connectTimeout": 9000,
+    "connection_timeout": 90000,
+    "timeout": 90000,
+    "capabilities" : {
+      "unexpectedAlertBehaviour" : "accept",
+      "handlesAlerts" : "true"
+    },
+    "browser" : {
+      "capabilities" : {
+        "unexpectedAlertBehaviour" : "accept",
+        "handlesAlerts" : "true"
+      }
+    }
+  },
+  "report" : {
+    "format" : "cucumber",
+    "outputDirectory" : "./Reports/ci"
+  },
+  "bddScreenshotOnlyOnFailed" : true,
+  "email": "magagan+auto01@olx.ph",
+  "password": "#1234qwer",
+  "verified-phone": "09218943165",
+  "buyer-phone": "09157694429",
+  "buyer-password": "#1234qwer",
+  "name": "QA Auto",
+  "email-fb": "magagan+auto01@olx.ph",
+  "email-fb-pwd": "#1234qwer",
+  "verified-phone-fb": "09218943165",
+  "search_keyword_1": "computer",
+  "search_keyword_2": "Cocaine",
+  "search_keyword_3": "qwertyasdfgh",
+  "search_keyword_4": "cars",
+  "search_location_1": "Manila",
+  "search_location_2": "Baguio"
+}

@@ -1,0 +1,31 @@
+# behat.yml
+default:
+    extensions:
+        Tonic\Behat\ParallelScenarioExtension: ~
+        Athena\Behat\BootstrapFileLoader:
+            bootstrap_path: "/opt/athena/bootstrap.php"
+
+        Athena\Event\Proxy\BehatProxyExtension: ~
+
+    suites:
+        Athena Functional Tests (BDD):
+            filters:
+             tags: ~@skipScenario
+            paths:
+                - %paths.base%/Bdd/feature
+            contexts:
+                - Tests\Bdd\context\AdBoostingPackageContext
+                - Tests\Bdd\context\AdDetailsContext
+                - Tests\Bdd\context\AdListingContext
+                - Tests\Bdd\context\HighlightAdContext
+                - Tests\Bdd\context\HomePageContext
+                - Tests\Bdd\context\LoginContext
+                - Tests\Bdd\context\RegistrationContext
+                - Tests\Bdd\context\SponsorAdsContext
+                - Tests\Bdd\context\TopUpContext
+                - Tests\Bdd\context\VasRefreshContext
+                - Tests\Bdd\context\VasScheduleRefreshContext
+                - Tests\Bdd\context\BuyNowContext
+                - Tests\Bdd\context\CategoryContext
+                - Tests\Bdd\context\SellFormContext
+                - Tests\Bdd\context\AdsenseContext

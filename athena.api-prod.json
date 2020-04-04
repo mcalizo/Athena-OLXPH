@@ -1,0 +1,12 @@
+{
+  "urls" : {
+    "home" : "https://ssl.olx.ph"
+  },
+  "selenium" : {
+    "hub_url" : "http://athena-selenium-hub:4444/wd/hub"
+  },
+  "report" : {
+    "format" : "json",
+    "outputDirectory" : "./Reports/api"
+  }
+}

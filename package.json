@@ -1,0 +1,26 @@
+{
+  "name": "athena-olxph",
+  "version": "1.0.0",
+  "description": "Athena OLXPH with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-cucumber"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olxphilippines/athena-olxph.git"
+  },
+  "keywords": [
+    "athena-cucumber"
+  ],
+  "author": "mcgagan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olxphilippines/athena-olxph/issues"
+  },
+  "homepage": "https://github.com/olxphilippines/athena-olxph#readme",
+  "devDependencies": {
+    "cucumber-html-reporter": "^0.5.0",
+    "grunt-cucumberjs": "^1.0.2"
+  }
+}
